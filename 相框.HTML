@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>相框动画</title>
+</head>
+<body>
+    <style>
+        .box{
+            width: 440px;
+            height: 440px;
+            border: 30px solid rosybrown;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .div1{
+            width: 350px;
+            height: 350px;
+            border: 20px solid rgb(212, 173, 173);
+            box-sizing: border-box;
+            margin: 12px;
+        }
+        .div2{
+            width: 100%;
+            height: 100%;
+            border: 10px solid #ffffff;
+            box-sizing: border-box;
+        }
+        .div2 img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        
+    </style>
+        <div class="box">
+            <div class="div1">
+                <div class="div2">
+                    <img src="../h5day08/img/img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+</html>
